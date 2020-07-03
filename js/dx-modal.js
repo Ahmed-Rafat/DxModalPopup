@@ -48,11 +48,7 @@ class DxModal {
     buildModal() {
         var content, contentHolder; 
 
-        if( typeof this.options.content === "string") {
-            content = this.options.content
-        } else {
-            content = this.options.content.innerHTML
-        }
+        content = this.options.content
 
         // Create a container Document elemet Modal 
         this.modalContainer = document.createElement("div");
