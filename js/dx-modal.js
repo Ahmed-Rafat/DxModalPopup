@@ -109,5 +109,7 @@ class DxModal {
     // Close Modal
     close() {
         this.modalContainer.style.display = "none"
+
+        this.modalContainer.parentNode.removeChild(this.modalContainer);
     }
 }
