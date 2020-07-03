@@ -22,9 +22,12 @@ class DxModal {
         }
     }
 
+    // initialize the Modal
     init() {
+        // Start Build the Modal HTML 
         this.buildModal()
 
+        // Start initialize Event
         this.initializeEvents()
     }
 
@@ -41,6 +44,7 @@ class DxModal {
         return source;
     }
 
+    // Function to Build The HTML of Modal
     buildModal() {
         var content, contentHolder; 
 
@@ -101,10 +105,12 @@ class DxModal {
     
     }
 
+    // Open Modal
     open() {
         this.init()        
     }
 
+    // Close Modal
     close() {
         this.modalContainer.style.display = "none"
     }
