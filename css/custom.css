@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+}
+
+
+/* Dx Modal Style */
+
+.dx-modal-container{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999
+}
+
+.dx-modal-container .dx-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  background: #FFF;
+  padding: 20px;
+}
+
+.dx-modal-container .dx-modal-overlay{
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dx-modal-container .dx-modal-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  z-index: 9
+}
